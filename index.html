@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ritik - BTech CSE (AI/ML) student and founder of EcoVizi.">
+  <title>Ritik | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="#top" class="logo">Ritik</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Ritik Raushan</h1>
+        <p class="role">Student of AI and machine learning, building energy software in Jaipur.</p>
+      </div>
+      <figure class="photo">
+        <img src="assets/photo.jpg" alt="Portrait of Ritik"
+             onerror="this.style.display='none'; this.parentElement.classList.add('empty');">
+        <figcaption>Replace assets/photo.jpg with your picture</figcaption>
+      </figure>
+    </section>
+
+    <section id="about" class="block">
+      <h2>About</h2>
+      <p>
+        I'm a Second-year BTech student in Computer Science with a focus on AI and ML,
+        based in Jaipur, Rajasthan. I like working on problems where software touches
+        the physical world, which is why I'm building EcoVizi, a startup focused on
+        smart energy monitoring and carbon intelligence.
+      </p>
+      <p>
+        I care about writing code that is clear, testable, and useful to the people
+        who run it. Outside of coursework and building, I'm usually reading about
+        new models and how they get deployed.
+      </p>
+    </section>
+
+    <section id="education" class="block">
+      <h2>Education</h2>
+      <ol class="timeline">
+        <li>
+          <div class="when">2026 - Present</div>
+          <div>
+            <h3>BTech, Computer Science Engineering (AI/ML)</h3>
+            <p>[VGU jaipur], Jaipur</p>
+          </div>
+        </li>
+        <li>
+          <div class="when">2021 - 2023</div>
+          <div>
+            <h3>Senior Secondary (Class XII)</h3>
+            <p>[SNNR College], [Begusarai]</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section id="skills" class="block">
+      <h2>Skills</h2>
+      <div class="skill-groups">
+        <div>
+          <h3>Languages</h3>
+          <p>Python, JavaScript, C++, SQL, MongoDB, InfluxDB, Oracle, data structures </p>
+        </div>
+        <div>
+          <h3>Machine learning</h3>
+          <p>NumPy, pandas, scikit-learn, PyTorch basics</p>
+        </div>
+        <div>
+          <h3>Web and tools</h3>
+          <p>HTML, CSS, Git, GitHub, Linux, Reactjs, Node.js</p>
+        </div>
+        <div>
+          <h3>Hardware and IoT</h3>
+          <p>Sensor integration, embedded basics</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="block">
+      <h2>Projects</h2>
+
+      <article class="project">
+        <h3>EcoVizi</h3>
+        <p>
+          Smart energy and carbon intelligence platform. Tracks electricity usage and
+          translates it into carbon estimates so households and small businesses can
+          see where their emissions come from and what to change.
+        </p>
+        <p class="stack">Python, hardware sensors, dashboard</p>
+        <a href="#" class="text-link">View project</a>
+      </article>
+
+      <article class="project">
+        <h3>[Project Two]</h3>
+        <p>Short description of what it does and what you learned building it.</p>
+        <p class="stack">Python, scikit-learn</p>
+        <a href="#" class="text-link">View on GitHub</a>
+      </article>
+
+      <article class="project">
+        <h3>[Project Three]</h3>
+        <p>Short description of the problem you solved and the approach you took.</p>
+        <p class="stack">JavaScript, HTML, CSS</p>
+        <a href="#" class="text-link">View on GitHub</a>
+      </article>
+    </section>
+
+    <section id="contact" class="block">
+      <h2>Contact</h2>
+      <p>Send a message and I'll get back to you.</p>
+      <form id="contact-form" class="contact-form" novalidate>
+        <label>
+          Name
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button type="submit">Send message</button>
+        <p id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Built by Ritik. Hosted on GitHub Pages.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
